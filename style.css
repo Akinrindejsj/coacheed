@@ -1,0 +1,167 @@
+body {
+    background-color: #fafafa;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+.header {
+    background-color: #ffffff;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+.sidebar {
+   
+    background-color: #ffffff;
+    width: 308px;
+    position: fixed;
+    top: 162px; 
+    height: 772px; 
+    overflow-y: auto; 
+}
+
+
+.content {
+    margin-left: 320px; 
+    padding: 20px;
+}
+
+
+p {
+    line-height: 1.6;
+}
+button{
+    color: #DD9B4D;
+    background-color: #F6AD55;
+    font-size: 10px;
+    border-radius: 40%;
+    border: none;
+}
+.rows{
+    margin-left: 160px;
+}
+.please{
+    width: 1100px;
+     margin-left: 200px;
+     padding-top:10px ;
+      padding-left: 10px;
+      background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+    overflow: hidden;
+}
+@media (max-width: 768px) {
+    .sidebar {
+        display: none; 
+    }
+    .content {
+        margin-left: 0;
+    }
+    .rows{
+        margin-left: -190px;
+        
+    }
+    .please{
+        width: 520px;
+    }
+}
+.active {
+    margin-left: -16px !important;
+border-radius:0% !important;
+width: 322px !important;
+color: red !important;
+background-color:#FEF4F4 !important;
+    
+}
+span{
+    color: #646E82;
+font-size: 20px;
+font-weight: 500;
+line-height: 30px;
+}
+.con{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+.card {
+    width: 244px;
+    height: 349px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    overflow: hidden;
+}
+
+.profile-card {
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 39px;
+    height: 39px;
+    border-radius: 50%; /* Make it circular */
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.profile-pic img {
+    width: 100%;
+    height: auto;
+}
+
+.profile-info {
+    flex: 1;
+}
+
+.username {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.email {
+    font-size: 14px;
+    color: #666;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 40px); 
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: calc(100% - 40px); 
+        margin: 20px 0;
+    }
+}
